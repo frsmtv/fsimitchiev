@@ -16,15 +16,21 @@ a {
   -ms-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
-  &:hover {
-    opacity: .8;
+}
+#aMusic:hover {
     -webkit-box-shadow: 10px -10px 0 0 #000;
     box-shadow: 10px -10px 0 0 #000;
-  }
+}
+#aWeb:hover {
+  -webkit-box-shadow: -10px -10px 0 0 #000;
+  box-shadow: -10px -10px 0 0 #000;
 }
 
 #fullpage {
-  width: 60%;
+  //background: url("../img/FullSizeRender.jpg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
@@ -43,5 +49,8 @@ a {
         color: magenta;
       }
     }
+  }
+  #music {
+    display: none;
   }
 }
