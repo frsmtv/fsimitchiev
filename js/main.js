@@ -27,16 +27,17 @@ $(document).ready(function() {
 //                    window.setTimeout(function(){$('#t').t('add','<br>Clique !');},2e4);
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
                     // Show menu after intro
-                    // $('#menu').fadeIn();
-                    // $(window).scrollTop($(document).height());
+                    $('#nav').fadeIn();
+                    $(window).scrollTop($(document).height());
                 }
             }
         });
     });
 
-    // ********** INTRO SECTION REVEAL **********
-    $('#parcoursLink').click(function() {
-        $('span').fadeIn();
+    // ********** CONTACT REVEAL **********
+    $('#contactLink').click(function() {
+        $('#contact').fadeIn();
+        $(window).scrollTop($(document).height());
     })
 
 });

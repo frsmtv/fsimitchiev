@@ -9,15 +9,30 @@ html, body {
   color: #000;
 }
 a {
-  color: #000;
+  color: yellow;
+  background: magenta;
   text-decoration: none;
-  padding: 0 1%;
-  border: 1px solid #000;
+  padding: 1%;
   -webkit-transition: all 600ms ease-in-out;
   -moz-transition: all 600ms ease-in-out;
   -ms-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
+}
+i {
+  margin-right: 1%;
+  color: yellow;
+  background: magenta;
+  text-decoration: none;
+  padding: 1%;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 #fullpage {
@@ -46,6 +61,21 @@ a {
         color: magenta;
         font-size: 1.5rem;
       }
+    }
+  }
+  #nav {
+    display: none;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+  }
+  #contact {
+    display: none;
+    ul {
+      display: flex;
+      list-style: none;
     }
   }
 }
