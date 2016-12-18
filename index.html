@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>François Simitchiev</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
@@ -16,78 +17,37 @@
 
     <!--******** MAIN CONTAINER ********-->
     <div id="fullpage">
+
         <!--******** LOGO ********-->
-        <img class="animated fadeIn" src="dist/img/francois-simitchiev-logo.png" alt="francois simitchiev, etc..." title="francois simitchiev logo">
+        <img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo">
+
+        <!--******** MENU ********-->
+        <!--<div id="menu">-->
+            <!--<ul><li><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></li>-->
+                <!--<li><a id="parcoursLink" href="#">Parcours</a></li>-->
+                <!--<li>Audio</li>-->
+                <!--<li>Web</li>-->
+                <!--<li>Contact</li>-->
+            <!--</ul>-->
+        <!--</div> &lt;!&ndash; menu &ndash;&gt;-->
+
         <!--******** INTRO ********-->
         <div id="t" class="section">
             <span class="t-container">
                 <mark>Bonjour !</mark><br>
-                Mon nom est François Simitchiev<br>
-                Je suis <a id="aMusic" href="#">compositeur/sound designer</a> &
-                <a id="aWeb" href="#">développeur web</a>
+                Mon nom est <b>François Simitchiev</b> et je suis un <b>créatif</b> dans l'<b>audio</b> et le <b>web.</b><br><br>
+                <del data-del="mus" data-ins="0.12"></del>
+                Contrebassiste classique et musicien électronique, je travaille également comme <b>compositeur</b> et <b>sound designer</b>.
+                <br><br>
+                Passionné par le web, l'image et la communication, je suis en 2016 une formation d'intégrateur / développeur web, ainsi que des cours de design.<br><br>
+                En parallèle à ma carrière de musicien, je commence à travailler comme <b>développeur front-end</b>  freelance.<br><br>
+                En 2017 je fonde <em><b>Dakheur Klub</b></em>, studio web au service des musiciens, des secteurs culturel et associatif.
+                <img id="dakheurKlubLogo" src="dist/img/dakheur-klub-logo_v2b.png" alt="dakheur klub, studio web fondé par François Simitchiev" title="dakheur klub logo" class="animated fadeIn">
             </span>
         </div> <!-- intro -->
-
-        <!--******** MUSIC ********-->
-        <div id="music">
-            <p>
-                Contrebassiste élevé au conservatoire et nourri au classique,
-                je travaille également
-                Ma double culture classique/électronique, instrumentiste et bidouilleur
-            </p>
-        </div> <!-- music -->
-
-
-
     </div> <!-- fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!--<script src="js/t.min.js"></script>-->
+<script src="js/t.min.js"></script>
 <script src="js/main.js"></script>
-<!--<script>-->
-
-    <!--/*<![CDATA[*/-->
-
-    <!--var fin=!1;-->
-
-    <!--function foo(){-->
-        <!--$('mark').eq(0).css({background:'magenta'});-->
-
-    <!--}-->
-
-    <!--$(function(){-->
-
-
-
-        <!--$('#t').t({-->
-
-            <!--speed:25,-->
-            <!--speed_vary:true,-->
-            <!--mistype:20,-->
-
-
-            <!--typing:function(elem,chars_total,chars_left,_char){-->
-                <!--if(_char=='*')foo();-->
-            <!--},-->
-
-            <!--fin:function(){-->
-
-                <!--if(fin==!1){-->
-                    <!--fin=!!1; //avoids triggering after 'add' cmd-->
-<!--//                    window.setTimeout(function(){$('#t').t('add','<br>Clique !');},2e4);-->
-                    <!--window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);-->
-                <!--}-->
-
-            <!--}-->
-
-        <!--});-->
-
-
-
-    <!--});-->
-
-
-    <!--/*]]>*/-->
-
-<!--</script>-->
 </body>
 </html>

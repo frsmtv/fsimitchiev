@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Fira Mono', monospace;
+  line-height: 1.5;
+  //font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #000;
 }
 a {
@@ -17,40 +19,33 @@ a {
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
-#aMusic:hover {
-    -webkit-box-shadow: 10px -10px 0 0 #000;
-    box-shadow: 10px -10px 0 0 #000;
-}
-#aWeb:hover {
-  -webkit-box-shadow: -10px -10px 0 0 #000;
-  box-shadow: -10px -10px 0 0 #000;
-}
 
 #fullpage {
-  //background: url("../img/FullSizeRender.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  width: 65%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  img {
+  margin-top: 5%;
+  #logo {
     width: 150px;
     display: block;
   }
   #t {
     margin-top: 10%;
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
     span {
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-align: justify;
+      img {
+        width: 100%;
+        display: block;
+        margin-top: 2%;
+      }
       mark {
         color: magenta;
+        font-size: 1.5rem;
       }
     }
-  }
-  #music {
-    display: none;
   }
 }

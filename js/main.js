@@ -5,22 +5,19 @@ $(document).ready(function() {
 
     function foo(){
         $('mark').eq(0).css({background:'magenta'});
-
     }
 
     $(function(){
-
-
-
         $('#t').t({
-
-            speed:25,
+            speed:20,
             speed_vary:true,
-            mistype:20,
-
+            mistype:100,
 
             typing:function(elem,chars_total,chars_left,_char){
                 if(_char=='*')foo();
+                // Auto scroll to top
+                $(window).scrollTop($(document).height());
+
             },
 
             fin:function(){
@@ -29,20 +26,17 @@ $(document).ready(function() {
                     fin=!!1; //avoids triggering after 'add' cmd
 //                    window.setTimeout(function(){$('#t').t('add','<br>Clique !');},2e4);
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
+                    // Show menu after intro
+                    // $('#menu').fadeIn();
+                    // $(window).scrollTop($(document).height());
                 }
             }
-
         });
-
-
-
     });
 
-    // ********** SECTIONS REVEAL **********
-    $('#aMusic').click(function() {
-        $('#music').fadeIn();
-    });
-
-
+    // ********** INTRO SECTION REVEAL **********
+    $('#parcoursLink').click(function() {
+        $('span').fadeIn();
+    })
 
 });
