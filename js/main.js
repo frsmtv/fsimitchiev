@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-    // ********** SECTIONS REVEAL **********
-    $('#aMusic').click(function() {
-        $('#music').fadeIn();
-    });
-
-
     // ********** TEXT ANIM **********
     var fin=!1;
 
@@ -36,13 +30,17 @@ $(document).ready(function() {
 //                    window.setTimeout(function(){$('#t').t('add','<br>Clique !');},2e4);
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
                 }
-
             }
 
         });
 
 
 
+    });
+
+    // ********** SECTIONS REVEAL **********
+    $('#aMusic').click(function() {
+        $('#music').fadeIn();
     });
 
 
