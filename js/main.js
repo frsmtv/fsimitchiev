@@ -27,17 +27,13 @@ $(document).ready(function() {
 //                    window.setTimeout(function(){$('#t').t('add','<br>Clique !');},2e4);
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
                     // Show menu after intro
-                    $('#nav').fadeIn();
+                    $('#contact').fadeIn();
                     $(window).scrollTop($(document).height());
                 }
             }
         });
     });
 
-    // ********** CONTACT REVEAL **********
-    $('#contactLink').click(function() {
-        $('#contact').fadeIn();
-        $(window).scrollTop($(document).height());
-    })
+
 
 });

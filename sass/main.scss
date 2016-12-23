@@ -9,20 +9,8 @@ html, body {
   color: #000;
 }
 a {
-  color: yellow;
-  background: magenta;
-  text-decoration: none;
-  padding: 1%;
-  -webkit-transition: all 600ms ease-in-out;
-  -moz-transition: all 600ms ease-in-out;
-  -ms-transition: all 600ms ease-in-out;
-  -o-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-}
-i {
-  margin-right: 1%;
-  color: yellow;
-  background: magenta;
+  color: inherit;
+  //background: magenta;
   text-decoration: none;
   padding: 1%;
   -webkit-transition: all 600ms ease-in-out;
@@ -31,10 +19,9 @@ i {
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
   &:hover {
-    cursor: pointer;
+    opacity: .6;
   }
 }
-
 #fullpage {
   width: 50%;
   margin-left: auto;
@@ -54,28 +41,39 @@ i {
       text-align: justify;
       img {
         width: 100%;
-        display: block;
+        display: none;
         margin-top: 2%;
       }
       mark {
         color: magenta;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   }
-  #nav {
-    display: none;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-    }
-  }
   #contact {
-    display: none;
+    //display: none;
+    width: 100%;
     ul {
       display: flex;
       list-style: none;
+      font-size: 0.8rem;
+      li {
+        i {
+          margin-right: 1%;
+          //color: yellow;
+          //background: magenta;
+          padding: 1%;
+          -webkit-transition: all 600ms ease-in-out;
+          -moz-transition: all 600ms ease-in-out;
+          -ms-transition: all 600ms ease-in-out;
+          -o-transition: all 600ms ease-in-out;
+          transition: all 600ms ease-in-out;
+          &:hover {
+            cursor: pointer;
+            opacity: .6;
+          }
+        }
+      }
     }
   }
 }
