@@ -3,9 +3,10 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
   //font-family: 'Noto Sans', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #000;
 }
 a {
@@ -44,15 +45,11 @@ a {
     margin-right: auto;
     text-align: justify;
     span {
-      font-size: 1rem;
-      img {
-        width: 100%;
-        display: none;
-        margin-top: 2%;
-      }
+      font-size: 1.4rem;
       mark {
-        color: magenta;
-        font-size: 1.2rem;
+        color: #FF5F41;
+        font-size: 1.8rem;
+        background-color: transparent;
       }
     }
   }
@@ -66,8 +63,13 @@ a {
     display: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 0;
+    #links {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.4rem;
+    }
     ul {
       display: flex;
       margin-bottom: 4%;

@@ -37,19 +37,19 @@ $(document).ready(function() {
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
 
                     // Show menu after intro
-                    $('#fullpage').css({"-webkit-transform":"translate(0px,-150px)"})
+                    // $('#fullpage').css({"-webkit-transform":"translate(0px,-150px)"})
                     $('#contact').show();
-                    // $(window).scrollTop($(document).height());
+                    $(window).scrollTop($(document).height());
                 }
             }
         });
     });
 
-    // ********** AUTORESCROLL TO TOP ON MOUSEMOVE **********
-    $( "#logo" ).mousemove(function() {
-        $('#fullpage').css({"-webkit-transform":"translate(0px, 150px)"})
-        $('#contact').css({"margin-top": "-80%" })
-    });
+    // // ********** AUTORESCROLL TO TOP ON MOUSEMOVE **********
+    // $( "#logo" ).mousemove(function() {
+    //     $('#fullpage').css({"-webkit-transform":"translate(0px, 150px)"})
+    //     $('#contact').css({"margin-top": "-80%" })
+    // });
 
     // ********** AUTORESCROLL TO BOTTOM ON MOUSEMOVE **********
     // $( "#logo" ).mouseleave(function() {
