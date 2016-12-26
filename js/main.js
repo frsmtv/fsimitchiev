@@ -38,8 +38,10 @@ $(document).ready(function() {
 
                     // Show menu after intro
                     // $('#fullpage').css({"-webkit-transform":"translate(0px,-150px)"})
+                    $('span').css('font-size', '1rem');
+                    $('mark').css('font-size', '1.4rem');
                     $('#contact').show();
-                    $(window).scrollTop($(document).height());
+                    // $(window).scrollTop($(document).height());
                 }
             }
         });

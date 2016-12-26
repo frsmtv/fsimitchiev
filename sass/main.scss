@@ -45,9 +45,21 @@ a {
     margin-right: auto;
     text-align: justify;
     span {
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+
       font-size: 1.4rem;
       mark {
-        color: #FF5F41;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+
+        color: orangered;
         font-size: 1.8rem;
         background-color: transparent;
       }
@@ -69,6 +81,7 @@ a {
       display: flex;
       justify-content: space-around;
       font-size: 1.4rem;
+      color: orangered;
     }
     ul {
       display: flex;
