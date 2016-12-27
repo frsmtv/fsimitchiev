@@ -1,14 +1,5 @@
 $(document).ready(function() {
 
-
-    // // ********** FULL HEIGHT SCREEN ********
-    // $(document).ready(function(){
-    //     $('body').css('height', $(window).height());
-    // });
-    // $(window).resize(function(){
-    //     $('body').css('height', $(window).height());
-    // });
-
     // ********** TEXT ANIM **********
     var fin=!1;
 
@@ -41,24 +32,11 @@ $(document).ready(function() {
                     $('span').css('font-size', '1rem');
                     $('mark').css('font-size', '1.4rem');
                     $('#contact').show();
-                    $('.menuLink').addClass('animated fadeInUp');
                     $('#logo').css('width', '120px');
                     // $(window).scrollTop($(document).height());
                 }
             }
         });
     });
-
-    // // ********** AUTORESCROLL TO TOP ON MOUSEMOVE **********
-    // $( "#logo" ).mousemove(function() {
-    //     $('#fullpage').css({"-webkit-transform":"translate(0px, 150px)"})
-    //     $('#contact').css({"margin-top": "-80%" })
-    // });
-
-    // ********** AUTORESCROLL TO BOTTOM ON MOUSEMOVE **********
-    // $( "#logo" ).mouseleave(function() {
-    //     $('#fullpage').css({"-webkit-transform":"translate(0px, -100px)"})
-    // });
-
 
 });
