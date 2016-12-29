@@ -9,9 +9,9 @@ $(document).ready(function() {
 
     $(function(){
         $('#t').t({
-            speed:20,
+            speed:18,
             speed_vary:true,
-            mistype:100,
+            mistype:00,
 
             typing:function(elem,chars_total,chars_left,_char){
                 if(_char=='*')foo();
