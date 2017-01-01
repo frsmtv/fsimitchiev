@@ -43,6 +43,9 @@ a {
 
     width: 150px;
     display: block;
+    &:hover {
+      opacity: 1;
+    }
   }
   #nav {
     ul {
@@ -56,6 +59,9 @@ a {
         display: inline-block;
         position: relative;
         padding-bottom: 3px;
+        &:hover {
+          opacity: 1;
+        }
       }
       a:after {
         content: '';
