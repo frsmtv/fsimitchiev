@@ -28,9 +28,9 @@ $(document).ready(function() {
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
 
                     // Show menu after intro
-                    // $('#fullpage').css({"-webkit-transform":"translate(0px,-150px)"})
-                    $('span').css('font-size', '1rem');
-                    $('mark').css('font-size', '1.4rem');
+                    $('#fullpage').css({"-webkit-transform":"translate(0px,-50px)"})
+                    // $('span').css('font-size', '1rem');
+                    // $('mark').css('font-size', '1.4rem');
                     $('#contact').show();
                     // $('#logo').css('width', '120px');
                     // $(window).scrollTop($(document).height());

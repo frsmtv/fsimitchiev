@@ -1,9 +1,12 @@
+@import "partials/contact-page";
+//@import "partials/cequejefais-page";
+
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.4;
   //font-family: 'Noto Sans', sans-serif;
   //font-family: 'Open Sans', sans-serif;
   font-family: 'Questrial', sans-serif;
@@ -62,7 +65,7 @@ a {
         position: relative;
         padding-bottom: 3px;
         &:hover {
-          opacity: 1;
+          opacity: 1 !important;
         }
       }
       a:after {
@@ -106,6 +109,9 @@ a {
         background-color: transparent;
       }
     }
+    .t-caret {
+      display: none !important;
+    }
   }
   #contact {
     -webkit-transition: all 1s ease-in-out;
@@ -128,7 +134,7 @@ a {
       li {
         margin-right: 1%;
         a {
-          .fa  {
+          .fa {
             display: inline;
             margin-right: 2%;
             -webkit-transition: all 600ms ease-in-out;
