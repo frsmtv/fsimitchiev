@@ -8,6 +8,7 @@ html, body {
   //font-family: 'Open Sans', sans-serif;
   font-family: 'Questrial', sans-serif;
   color: #333333;
+  background: #fff;
 }
 a {
   color: inherit;
@@ -50,12 +51,13 @@ a {
   #nav {
     ul {
       display: flex;
-      font-size: 1.2rem;
-      color: #000;
+      font-size: 1.6rem;
+      color: #333333;
       list-style: none;
       padding: 0;
       justify-content: space-between;
       a {
+        color: #333333;
         display: inline-block;
         position: relative;
         padding-bottom: 3px;
@@ -99,7 +101,7 @@ a {
         -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
 
-        //color: orangered;
+        color: inherit;
         font-size: 1.8rem;
         background-color: transparent;
       }
