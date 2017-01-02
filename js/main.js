@@ -32,7 +32,7 @@ $(document).ready(function() {
                     $('span').css('font-size', '1rem');
                     $('mark').css('font-size', '1.4rem');
                     $('#contact').show();
-                    $('#logo').css('width', '120px');
+                    // $('#logo').css('width', '120px');
                     // $(window).scrollTop($(document).height());
                 }
             }
