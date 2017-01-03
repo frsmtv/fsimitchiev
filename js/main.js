@@ -28,7 +28,7 @@ $(document).ready(function() {
                     window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
 
                     // Show menu after intro
-                    $('#fullpage').css({"-webkit-transform":"translate(0px,-70px)"})
+                    // $('#fullpage').css({"-webkit-transform":"translate(0px,-50px)"})
                     // $('span').css('font-size', '1rem');
                     // $('mark').css('font-size', '1.4rem');
                     $('#contact').show();
