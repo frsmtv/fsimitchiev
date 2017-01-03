@@ -51,7 +51,6 @@ $(document).ready(function() {
        $('footer').show();
     });
 
-
     // **** WEB SECTION ****
     $('#webbtn').click(function() {
         $('#musicbtn').css('opacity', '0.5');
