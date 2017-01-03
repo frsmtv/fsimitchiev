@@ -44,34 +44,20 @@ $(document).ready(function() {
 
     // **** MUSIQUE SECTION ****
     $('#musicbtn').click(function() {
-        $('#soundDesign').hide();
-        $('#web').hide();
         $('#musicbtn').css('opacity', '1');
-       $('#sdbtn').css('opacity', '0.5');
        $('#webbtn').css('opacity', '0.5');
+        $('#web').hide();
        $('#musique').fadeIn();
        $('footer').show();
     });
 
-    // **** SOUND DESIGN SECTION ****
-    $('#sdbtn').click(function() {
-        $('#musique').hide();
-        $('#web').hide();
-        $('#soundDesign').fadeIn();
-        $('#sdbtn').css('opacity', '1');
-        $('#musicbtn').css('opacity', '0.5');
-        $('#webbtn').css('opacity', '0.5');
-        $('footer').show();
-    });
 
     // **** WEB SECTION ****
     $('#webbtn').click(function() {
-        $('#musique').hide();
-        $('#soundDesign').hide();
-        $('#web').fadeIn();
-        $('#sdbtn').css('opacity', '0.5');
         $('#musicbtn').css('opacity', '0.5');
         $('#webbtn').css('opacity', '1');
+        $('#musique').hide();
+        $('#web').fadeIn();
         $('footer').show();
     });
 });
