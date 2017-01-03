@@ -57,6 +57,12 @@
   p {
     font-size: 1.2rem;
     line-height: 1.8;
+    text-align: justify;
+    mark {
+      font-size: 1.6rem;
+      font-weight: bold;
+      background: none;
+    }
   }
   ul {
     list-style: none;
@@ -73,5 +79,6 @@
   }
   footer p {
     font-size: 0.8rem!important;
+    text-align: center;
   }
 }
