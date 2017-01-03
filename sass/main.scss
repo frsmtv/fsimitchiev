@@ -1,5 +1,7 @@
 @import "partials/contact-page";
-//@import "partials/cequejefais-page";
+@import "partials/profil";
+@import "partials/projets";
+@import "partials/footer";
 
 html, body {
   margin: 0;
@@ -7,8 +9,6 @@ html, body {
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.4;
-  //font-family: 'Noto Sans', sans-serif;
-  //font-family: 'Open Sans', sans-serif;
   font-family: 'Questrial', sans-serif;
   color: #333333;
   background: #fff;
@@ -34,7 +34,7 @@ a {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 
-  max-width: 60%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -45,8 +45,11 @@ a {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-    width: 150px;
+    width: 100px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
     &:hover {
       opacity: 1;
     }
@@ -54,7 +57,7 @@ a {
   #nav {
     ul {
       display: flex;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       color: #333333;
       list-style: none;
       padding: 0;
@@ -84,7 +87,7 @@ a {
     }
   }
   #t {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +100,7 @@ a {
       transition: all 1s ease-in-out;
 
       font-size: 1.4rem;
-      mark {
+      mark, h1 {
         -webkit-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
         -ms-transition: all 1s ease-in-out;
@@ -107,6 +110,9 @@ a {
         color: inherit;
         font-size: 1.8rem;
         background-color: transparent;
+        h1 {
+          display: inline;
+        }
       }
     }
     .t-caret {
