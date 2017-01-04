@@ -1,6 +1,6 @@
 #projetsMenu {
   width: 50%;
-  margin-top: 5%;
+  margin-top: 6%;
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
@@ -41,6 +41,7 @@
 }
 #musique {
   display: none;
+  text-align: center;
   ul {
     list-style: none;
     font-size: 4rem;
@@ -54,9 +55,13 @@
       }
     }
   }
+  mark {
+    background: none;
+  }
 }
 #web {
   display: none;
+  text-align: center;
   p {
     font-size: 1.2rem;
     line-height: 1.4;
@@ -83,5 +88,8 @@
   footer p {
     font-size: 0.8rem!important;
     text-align: center;
+  }
+  mark {
+    background: none;
   }
 }
