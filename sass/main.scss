@@ -7,11 +7,11 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   font-family: 'Questrial', sans-serif;
   color: #333333;
-  background: #fff;
+  background: #F6F6F7;
 }
 a {
   color: inherit;
@@ -45,7 +45,7 @@ a {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-    width: 140px;
+    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -58,11 +58,12 @@ a {
     text-align: center;
     font-size: 1rem;
     margin: 10px 0 50px 0;
+    color: #F6F6F7!important;
   }
   #nav {
     ul {
       display: flex;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #333333;
       list-style: none;
       padding: 0;
@@ -92,8 +93,7 @@ a {
     }
   }
   #t {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
@@ -134,14 +134,14 @@ a {
     display: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 0;
     ul {
       display: flex;
       margin-bottom: 4%;
       justify-content: space-around;
       list-style: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       li {
         margin-right: 1%;
         a {

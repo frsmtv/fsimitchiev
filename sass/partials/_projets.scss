@@ -40,7 +40,6 @@
   }
 }
 #musique {
-  display: none;
   text-align: center;
   ul {
     list-style: none;
@@ -60,7 +59,6 @@
   }
 }
 #web {
-  display: none;
   text-align: center;
   p {
     font-size: 1.2rem;
@@ -74,8 +72,9 @@
   }
   ul {
     list-style: none;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    padding: 0;
     li {
       a {
         opacity: 0.5;

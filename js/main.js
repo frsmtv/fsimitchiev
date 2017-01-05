@@ -40,6 +40,19 @@ $(document).ready(function() {
         });
     });
 
+    // **** LOGO REDUCE ON SCROLL ****
+    var scroll_start = 0;
+    var startchange = $('body');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#logo').addClass('animated zoomOut');
+        } else {
+            $('#logo').removeClass('zoomOut').addClass('zoomIn');
+        }
+    });
+
     // *********** PROJETS PAGE ANIMATIONS ***********
 
     // **** MUSIQUE SECTION ****
