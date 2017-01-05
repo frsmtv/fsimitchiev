@@ -7,7 +7,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   font-family: 'Questrial', sans-serif;
   color: #333333;
@@ -49,10 +49,6 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
-    &:hover {
-      opacity: 1;
-    }
   }
   h1 {
     text-align: center;
@@ -61,9 +57,10 @@ a {
     color: #F6F6F7!important;
   }
   #nav {
+    text-align: center;
     ul {
       display: flex;
-      font-size: 1.2rem;
+      font-size: 24px;
       color: #333333;
       list-style: none;
       padding: 0;
@@ -96,7 +93,7 @@ a {
     margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify;
+    text-align: left;
     span {
       -webkit-transition: all 1s ease-in-out;
       -moz-transition: all 1s ease-in-out;
@@ -134,7 +131,7 @@ a {
     display: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 0;
     ul {
       display: flex;
