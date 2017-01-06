@@ -2,6 +2,7 @@
 @import "partials/profil";
 @import "partials/projets";
 @import "partials/footer";
+@import "partials/quotes";
 
 html, body {
   margin: 0;
@@ -128,7 +129,7 @@ a {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-    display: none;
+    //display: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
