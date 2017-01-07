@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // ********** TEXT ANIM BUBBLE-Y **********
     var $quotes = $('#quotes .quote'),
-        opts = { fadeTime: 1000, dwellTime: 4500 },
+        opts = { fadeTime: 1000, dwellTime: 5000 },
         shuffle,
         fadeInQuote,
         fadeOutQuote,
