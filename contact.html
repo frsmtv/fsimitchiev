@@ -41,7 +41,7 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body>
+<body style="overflow: visible;">
 
 <!--******** MAIN CONTAINER ********-->
 <div id="fullpage">
@@ -52,15 +52,14 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
     </header>
 
     <!--********* NAV **********-->
-    <div id="nav" class="animated fadeIn">
+    <nav id="nav" class="animated fadeIn">
         <ul>
-            <li><a href="index.html" style="opacity: 0.5;">accueil</a></li>
-            <li><a href="profil.html" style="opacity: 0.5;">profil</a> </li>
-            <li><a href="projets.html" style="opacity: 0.5;">projets</a></li>
-            <li><a style="border-bottom: 1px solid #333333;" href="contact.html">contact</a></li>
-            <!--<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> Dakheur Klub</a></li>-->
+            <li><a class="non-active-link" href="index.html">accueil</a></li>
+            <li><a class="non-active-link" href="profil.html">profil</a></li>
+            <li><a class="non-active-link" href="projets.html">projets</a></li>
+            <li><a class="active-link" href="contact.html">contact</a></li>
         </ul>
-    </div> <!-- End: nav -->
+    </nav> <!-- End: nav -->
 
     <!--************ CONTACT *************-->
     <div id="contactPage" class="animated fadeIn">
@@ -89,6 +88,7 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 
 </div> <!-- End: fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

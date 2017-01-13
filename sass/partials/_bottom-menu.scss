@@ -1,0 +1,33 @@
+#bottom-menu {
+  display: none;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    li {
+      color: #e94767;
+      margin-right: 25%;
+      font-size: 1.4rem;
+      a {
+        -webkit-transition: all 600ms ease-in-out;
+        -moz-transition: all 600ms ease-in-out;
+        -ms-transition: all 600ms ease-in-out;
+        -o-transition: all 600ms ease-in-out;
+        transition: all 600ms ease-in-out;
+
+        opacity: .6;
+        i {
+          display: inline;
+          margin-right: 5%;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

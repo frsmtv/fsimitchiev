@@ -41,7 +41,7 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body>
+<body style="overflow: visible;">
 
 <!--******** MAIN CONTAINER ********-->
 <div id="fullpage">
@@ -52,14 +52,14 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
     </header>
 
     <!--********* NAV **********-->
-    <div id="nav" class="animated fadeIn">
+    <nav id="nav" class="animated fadeIn">
         <ul>
-            <li><a href="index.html" style="opacity: 0.5;">accueil</a></li>
-            <li><a href="profil.html" style="opacity: 0.5;">profil</a> </li>
-            <li><a style="border-bottom: 1px solid #333333;" href="projets.html">projets</a></li>
-            <li><a href="contact.html" style="opacity: 0.5;">contact</a></li>
+            <li><a class="non-active-link" href="index.html">accueil</a></li>
+            <li><a class="non-active-link" href="profil.html">profil</a></li>
+            <li><a class="active-link" href="projets.html">projets</a></li>
+            <li><a class="non-active-link" href="contact.html">contact</a></li>
         </ul>
-    </div> <!-- End: nav -->
+    </nav> <!-- End: nav -->
 
     <!--******************** PROJETS ********************-->
     <div id="web" class="animated fadeIn">
@@ -71,20 +71,20 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
             <li><a href="http://iraymusic.com/" target="_blank">iray</a> </li>
             <li><a href="http://institutleonmba.co/" target="_blank">institut léon mba</a> </li>
         </ul>
-
-        <mark class="animated fadeIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a style="font-size: 2rem" href="contact.html">contact</a></mark>
-
-        <!--******** FOOTER ********-->
-        <footer style="display: none;">
-            <p>
-                © François Simitchiev | Logo by Romain Launais
-            </p>
-        </footer>
     </div> <!-- End: web -->
+
+    <!--**** BOTTOM MENU ****-->
+    <div id="bottom-menu">
+        <ul>
+            <li><a href="profil.html"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>profil</a></li>
+            <li><a href="contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>contact</a></li>
+        </ul>
+    </div> <!-- End: bottom menu -->
 
 </div> <!-- End: fullpage -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

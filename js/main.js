@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
 
+    // **** HOME CONTACT FADEIN ****
+    $('#contact').delay(8000).show('fade', 4000);
+
     // ********** TEXT ANIM BUBBLE-Y **********
     var $quotes = $('#quotes .quote'),
         opts = { fadeTime: 1000, dwellTime: 5000 },
@@ -85,8 +88,12 @@ $(document).ready(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $('#logo').addClass('animated zoomOut');
+            $('nav').removeClass('fadeIn').addClass('fadeOut');
+            $('#bottom-menu').show('fade');
         } else {
             $('#logo').removeClass('zoomOut').addClass('zoomIn');
+            $('nav').removeClass('fadeOut').addClass('fadeIn');
+            $('#bottom-menu').hide('fade');
         }
     });
 

@@ -57,14 +57,14 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
         </header>
 
         <!--********* NAV **********-->
-        <div id="nav" class="animated fadeIn">
+        <nav id="nav" class="animated fadeIn">
             <ul>
-                <li><a style="border-bottom: 1px solid #333333;" href="index.html">accueil</a></li>
-                <li><a href="profil.html" style="opacity: 0.5;">profil</a></li>
-                <li><a href="projets.html" style="opacity: 0.5;">projets</a></li>
-                <li><a href="contact.html" style="opacity: 0.5;">contact</a></li>
+                <li><a class="active-link" href="index.html">accueil</a></li>
+                <li><a class="non-active-link" href="profil.html">profil</a></li>
+                <li><a class="non-active-link" href="projets.html">projets</a></li>
+                <li><a class="non-active-link" href="contact.html">contact</a></li>
             </ul>
-        </div> <!-- End: nav -->
+        </nav> <!-- End: nav -->
 
         <!--******** INTRO BUBBLE_Y ********-->
         <div id="intro" class="animated fadeIn">
@@ -93,10 +93,10 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
         </div> <!-- End: intro -->
 
         <!--******** CONTACT ********-->
-        <div id="contact" class="animated fadeInUp">
+        <div id="contact">
             <ul style="justify-content: center">
-                <li><a><i class="fa fa-phone-square" aria-hidden="true"></i>+33 663351022</a></li>
-                <li><a href="mailto:hello@fsimitchiev.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                <li style="margin: 0 2%"> <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i>+33 663351022</a></li>
+                <li style="margin: 0 2%"><a href="mailto:hello@fsimitchiev.com"><i class="fa fa-envelope" aria-hidden="true"></i>
                 hello@fsimitchiev.com</a></li>
                 <li style="margin: 0 2%"><a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                 <li style="margin: 0 2%"><a href="https://soundcloud.com/fsimitchiev" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
@@ -106,7 +106,8 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 
     </div> <!-- fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/letteringjs/jquery.lettering.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="bower_components/letteringjs/jquery.lettering.js"></script>-
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->
