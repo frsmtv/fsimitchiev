@@ -87,14 +87,22 @@ $(document).ready(function() {
     $(document).scroll(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
-            $('#logo').addClass('animated zoomOut');
+            $('#logo').addClass('animated fadeOut');
             $('nav').removeClass('fadeIn').addClass('fadeOut');
             $('#bottom-menu').show('fade');
         } else {
-            $('#logo').removeClass('zoomOut').addClass('zoomIn');
+            $('#logo').removeClass('fadeOut').addClass('fadeIn');
             $('nav').removeClass('fadeOut').addClass('fadeIn');
             $('#bottom-menu').hide('fade');
         }
+    });
+
+    // **** TARIFS ****
+    $('#tarifs-btn').click(function(){
+        $('#tarifs').show('fade', 500);
+        $('html, body').animate({
+            scrollTop: $('#tarifs').offset().top - 20
+        }, 'slow');
     });
 
 });

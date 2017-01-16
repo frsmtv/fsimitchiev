@@ -2,15 +2,18 @@
   display: none;
   ul {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     bottom: 0;
     list-style: none;
     padding: 0;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     li {
       color: #e94767;
-      margin-right: 25%;
+      //margin-right: 25%;
       font-size: 1.4rem;
       a {
         -webkit-transition: all 600ms ease-in-out;
