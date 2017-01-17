@@ -2,8 +2,8 @@
   display: none;
   ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: left;
+    //justify-content: space-between;
     position: fixed;
     bottom: 0;
     list-style: none;
@@ -11,9 +11,22 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    #tarifs-btn {
+      -webkit-transition: all 600ms ease-in-out;
+      -moz-transition: all 600ms ease-in-out;
+      -ms-transition: all 600ms ease-in-out;
+      -o-transition: all 600ms ease-in-out;
+      transition: all 600ms ease-in-out;
+
+      opacity: .6;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
     li {
       color: #e94767;
-      //margin-right: 25%;
+      margin-right: 2%;
       font-size: 1.4rem;
       a {
         -webkit-transition: all 600ms ease-in-out;

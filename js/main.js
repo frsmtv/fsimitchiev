@@ -99,10 +99,11 @@ $(document).ready(function() {
 
     // **** TARIFS ****
     $('#tarifs-btn').click(function(){
-        $('#tarifs').show('fade', 500);
+        $('#tarifs').show('fade', 1000);
         $('html, body').animate({
             scrollTop: $('#tarifs').offset().top - 20
         }, 'slow');
+        $('#tarifs-btn').hide('fade', 500)
     });
 
 });
