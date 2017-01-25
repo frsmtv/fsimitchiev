@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
     // **** HOME CONTACT FADEIN ****
-    $('#contact').delay(8000).show('fade', 4000);
+    $('#bottom-menu-home').delay(8000).show('fade', 4000);
 
     // ********** TEXT ANIM BUBBLE-Y **********
     var $quotes = $('#quotes .quote'),

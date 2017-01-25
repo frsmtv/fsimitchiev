@@ -1,9 +1,13 @@
-#bottom-menu {
+#bottom-menu-home {
+  display: none;
+}
+
+#bottom-menu, #bottom-menu-home {
   display: none;
   ul {
     display: flex;
     align-items: left;
-    //justify-content: space-between;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     list-style: none;
