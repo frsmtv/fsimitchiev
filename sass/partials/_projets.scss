@@ -39,27 +39,8 @@
       }
   }
 }
-#musique {
-  text-align: center;
-  ul {
-    list-style: none;
-    font-size: 4rem;
-    text-align: center;
-    li {
-      a {
-        opacity: 0.5;
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
-  mark {
-    background: none;
-  }
-}
 #web {
-  text-align: center;
+  text-align: left;
   margin-top: 7%;
   margin-bottom: 8%;
   p {
@@ -76,11 +57,11 @@
     list-style: none;
     font-size: 4rem;
     text-align: left;
-    margin-left: 30%;
     padding: 0;
     li {
       a {
         opacity: 0.5;
+        padding: 0;
         &:hover {
           opacity: 1;
         }
