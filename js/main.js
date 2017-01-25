@@ -80,7 +80,7 @@ $(document).ready(function() {
                 switchTo(next);
             }, opts.dwellTime );
 
-    // **** LOGO REDUCE ON SCROLL ****
+    // **** LOGO HIDE ON SCROLL ****
     var scroll_start = 0;
     var startchange = $('body');
     var offset = startchange.offset();
@@ -88,11 +88,10 @@ $(document).ready(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $('#logo').addClass('animated fadeOut');
-            $('nav').removeClass('fadeIn').addClass('fadeOut');
             $('#bottom-menu').show('fade');
+
         } else {
             $('#logo').removeClass('fadeOut').addClass('fadeIn');
-            $('nav').removeClass('fadeOut').addClass('fadeIn');
             $('#bottom-menu').hide('fade');
         }
     });
