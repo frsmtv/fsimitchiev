@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Je suis musicien et web designer / developpeur front-end.
-Je me spécialise dans la conception / réalisation de sites web pour le secteur culturel et associatif, les artistes et les artisans.">
+    <meta name="description" content="
+Double bassist, electronic music artist. Composer at the confluences of classical, electronic and ambient music. Also beatmaker.">
     <meta name="author" content="François SIMITCHIEV">
-    <title>François Simitchiev - musicien & web designer / développeur front-end</title>
+    <title>François Simitchiev - double basssit, electronic music artist, beatmaker</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
     <!--**** FAVICON ****-->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
@@ -43,32 +46,37 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 
 <body style="overflow: visible;">
 
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
 <!--******** MAIN CONTAINER ********-->
 <div id="fullpage">
 
     <!--******** HEADER ********-->
     <header>
         <a href="index.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
-    </header>
 
-    <!--********* NAV **********-->
-    <nav id="nav" class="animated fadeIn">
-        <ul>
-            <li><a class="non-active-link" href="index.html">accueil</a></li>
-            <li><a class="non-active-link" href="projets.html">projets</a></li>
-            <li><a class="active-link" href="contact.html">contact</a></li>
-        </ul>
-    </nav> <!-- End: nav -->
+        <!--********* NAV **********-->
+        <nav id="nav" class="animated fadeIn">
+            <span><a class="non-active-link corner-nav top-left" href="index.html">home</a></span>
+            <span><a class="non-active-link corner-nav top-right" href="projects.html">projects</a></span>
+            <span><a class="active-link corner-nav bottom-right" href="contact.html">contact</a></span>
+            <span><a class="non-active-link corner-nav bottom-left" href="live.html">live</a></span>
+        </nav> <!-- End: nav -->
+
+    </header>
 
     <!--************ CONTACT *************-->
     <main id="contactPage" class="animated fadeIn">
 
         <ul>
-            <li><b>téléphone</b>
-                <a href="tel:0663351022">+33 6 63 35 10 22</a></li>
+            <li><b>phone</b>
+                <a href="tel:0663351022">+33 (6) 63351022</a></li>
             <li><b>email</b>
                 <a href="mailto:hello@fsimitchiev.com">hello@fsimitchiev.com</a></li>
-            <li><a style="opacity: 1; padding-left: 0" href="">linkedin</a></li>
+            <li><a style="padding-left: 0" href="">soundcloud</a> | <a style="padding-left: 0" href="">twitter</a></li>
         </ul>
 
         <!--<ul id="social">-->
@@ -89,6 +97,17 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 </div> <!-- End: fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<!--<script src="js/main.js"></script>-->
+<script src="jquery-gradientify/jquery.gradientify.min.js"></script>
+<script src="js/main.js"></script>
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    })
+    //]]>
+</script>
 </body>
 </html>

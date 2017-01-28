@@ -1,0 +1,43 @@
+#projects {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  h2 {
+    display: inline-block;
+    font-size: $projectsFontSize;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    font-size: $projectsFontSize;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    li {
+      -webkit-transition: all 600ms ease-in-out;
+      -moz-transition: all 600ms ease-in-out;
+      -ms-transition: all 600ms ease-in-out;
+      -o-transition: all 600ms ease-in-out;
+      transition: all 600ms ease-in-out;
+
+      opacity: 0.6;
+      padding: 0;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        color: $hoverColor;
+      }
+    }
+  }
+  span {
+    font-size: $projectsSpanFontSize;
+    vertical-align: middle;
+  }
+
+  .accordion-content {
+    display: none;
+  }
+}
+

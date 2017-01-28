@@ -2,9 +2,10 @@
 @import "partials/nav";
 @import "partials/contact-page";
 @import "partials/profil";
-@import "partials/projets";
+@import "partials/projects";
 @import "partials/footer";
 @import "partials/quotes";
+@import "partials/motio";
 @import "partials/bottom-menu";
 
 html, body {
@@ -15,15 +16,16 @@ html, body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 1px;
-  font-family: 'Questrial', sans-serif;
+  font-family: $mainFont;
   color: #333333;
-  background: #fff;
+  background: url("../fsimitchiev-site-bg.mp4");
+  background-size: cover;
 }
+
 a {
   color: inherit;
   opacity: .6;
   text-decoration: none;
-  padding: 1%;
   -webkit-transition: all 600ms ease-in-out;
   -moz-transition: all 600ms ease-in-out;
   -ms-transition: all 600ms ease-in-out;
@@ -35,6 +37,7 @@ a {
     color: $hoverColor;
   }
 }
+
 #fullpage {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -42,12 +45,15 @@ a {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 2%;
   #logo {
     display: block;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
 
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -55,8 +61,6 @@ a {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-    width: 120px;
-    display: block;
   }
   h1 {
     text-align: center;
@@ -65,37 +69,6 @@ a {
     color: #F6F6F7!important;
   }
 
-  #t {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    span {
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -ms-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out;
-
-      font-size: 1.4rem;
-      mark, h1 {
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        transition: all 1s ease-in-out;
-
-        color: inherit;
-        font-size: 1.8rem;
-        background-color: transparent;
-        h1 {
-          display: inline;
-        }
-      }
-    }
-    .t-caret {
-      display: none !important;
-    }
-  }
   #contact {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;

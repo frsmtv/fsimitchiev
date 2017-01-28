@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Je suis musicien et web designer / developpeur front-end.
-Je me spécialise dans la conception / réalisation de sites web pour le secteur culturel et associatif, les artistes et les artisans.">
+    <meta name="description" content="
+Double bassist, electronic music artist. Composer at the confluences of classical, electronic and ambient music. Also beatmaker.">
     <meta name="author" content="François SIMITCHIEV">
-    <title>François Simitchiev - musicien & web designer / développeur front-end</title>
+    <title>François Simitchiev - double basssit, electronic music artist, beatmaker</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+
+
 
     <!--**** FAVICON ****-->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
@@ -53,58 +58,81 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 
     <!--******** HEADER ********-->
     <header>
-        <a href="index.html.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
+        <a href="index.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
 
         <!--********* NAV **********-->
         <nav id="nav" class="animated fadeIn">
-            <ul>
-                <li><a class="active-link" href="index.html">accueil</a></li>
-                <li><a class="non-active-link" href="projets.html">projets</a></li>
-                <li><a class="non-active-link" href="contact.html">contact</a></li>
-            </ul>
+                <span><a class="active-link corner-nav top-left" href="index.html">home</a></span>
+                <span><a class="non-active-link corner-nav top-right" href="projects.html">projects</a></span>
+                <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
+                <span><a class="non-active-link corner-nav bottom-left" href="live.html">live</a></span>
         </nav> <!-- End: nav -->
+
     </header>
 
     <!--******** INTRO BUBBLE_Y ********-->
     <main id="intro" class="animated fadeIn">
-        <div id="quotes">
-            <div class="quote">
-                <p class="text">Bonjour !<br/>
-                    Je suis un jeune designer / développeur front-end<br>
-                    de 29 ans basé à Lyon.
-                </p>
-            </div>
-            <div class="quote">
-                <p class="text">je me spécialise dans la conception / réalisation de sites web pour le secteur culturel et associatif, les artistes et les artisans.<br/></p>
-            </div>
-            <div class="quote">
-                <p class="text">Vous avez un projet,<br>
-                    et souhaitez que nous en discutions ? <br/>
-                    <a href="contact.html">Contactez-moi...</a><br/>
-            </div>
-            <div class="quote">
-                <p class="text">... et faisons connaissance autour d'un café !
-                </p>
-            </div>
-            <div class="quote">
-                <p class="text"></p>
-            </div>
-        </div> <!-- End: quotes -->
+
+        <!--**** MOTIO WRAPPER ****-->
+        <div id="panning" class="panning">
+            <div id="quotes">
+                <div class="quote">
+                    <p class="text">Hi!
+                        I'm François Simitchiev, <br>
+                        a double bass player & electronic music artist<br>
+                        born in 1987 & living in Lyon, France.
+                    </p>
+                </div>
+
+                <div class="quote">
+                    <p class="text">My creative universe is located at the confluences of classical, electronic and ambient music.<br>
+                    But not only...</p>
+                </div>
+
+                <div class="quote">
+                    <p class="text"><br>I also produce beats !<br/></p>
+                </div>
+
+                <div class="quote">
+                    <p class="text">If you are a singer, rapper, choreographer, movie director... </p>
+                </div>
+
+                <div class="quote">
+                    <p class="text">if you work into an art gallery, a museum, and if you need some music or/and sound design,
+                        </p>
+                </div>
+
+                <div class="quote">
+                    <p class="text">
+                        Please get in touch with me, I may be the guy you need!
+                    </p>
+                </div>
+
+                <div class="quote">
+                    <p class="text">
+                    </p>
+                </div>
+
+            </div> <!-- End: quotes -->
+
+        </div> <!-- End: motion wrapper -->
+
     </main> <!-- End: intro -->
 
     <!--**** BOTTOM MENU ****-->
-        <div id="bottom-menu-home">
-            <ul>
-                <li><a href="mailto:hello@fsimitchiev@gmail.com">hello@fsimitchiev.com</a></li>
-                <li><a href="tel:+33663351022">+33663351022</a></li>
-                <li><a href="#">linkedin</a> </li>
-            </ul>
-        </div> <!-- End: bottom menu -->
+        <!--<div id="bottom-menu-home">-->
+            <!--<ul>-->
+                <!--<li><a href="mailto:hello@fsimitchiev@gmail.com">hello@fsimitchiev.com</a></li>-->
+                <!--<li><a href="tel:+33663351022">+33663351022</a></li>-->
+                <!--<li><a href="#">linkedin</a> </li>-->
+            <!--</ul>-->
+        <!--</div> &lt;!&ndash; End: bottom menu &ndash;&gt;-->
 
 </div> <!-- fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.lettering.js"></script>
+<script src="motio/dist/motio.min.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->

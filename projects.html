@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Je suis musicien et web designer / developpeur front-end.
-Je me spécialise dans la conception / réalisation de sites web pour le secteur culturel et associatif, les artistes et les artisans.">
+    <meta name="description" content="
+Double bassist, electronic music artist. Composer at the confluences of classical, electronic and ambient music. Also beatmaker.">
     <meta name="author" content="François SIMITCHIEV">
-    <title>François Simitchiev - musicien & web designer / développeur front-end</title>
+    <title>François Simitchiev - double basssit, electronic music artist, beatmaker</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
     <!--**** FAVICON ****-->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
@@ -43,48 +46,89 @@ Je me spécialise dans la conception / réalisation de sites web pour le secteur
 
 <body style="overflow: visible;">
 
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
 <!--******** MAIN CONTAINER ********-->
 <div id="fullpage">
 
     <!--******** HEADER ********-->
     <header>
         <a href="index.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
+
+        <!--********* NAV **********-->
+        <nav id="nav" class="animated fadeIn">
+            <span><a class="non-active-link corner-nav top-left" href="index.html">home</a></span>
+            <span><a class="active-link corner-nav top-right" href="projects.html">projects</a></span>
+            <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
+            <span><a class="non-active-link corner-nav bottom-left" href="live.html">live</a></span>
+        </nav> <!-- End: nav -->
+
     </header>
 
-    <!--********* NAV **********-->
-    <nav id="nav" class="animated fadeIn">
-        <ul>
-            <li><a class="non-active-link" href="index.html">accueil</a></li>
-            <li><a class="active-link" href="projets.html">projets</a></li>
-            <li><a class="non-active-link" href="contact.html">contact</a></li>
-        </ul>
-    </nav> <!-- End: nav -->
+        <!--**** MOTIO WRAPPER ****-->
+    <div id="panning" class="panning">
 
-    <!--******************** PROJETS ********************-->
-    <main id="web" class="animated fadeIn">
+    <!--******************** PROJECTS ********************-->
+    <main id="projects" class="animated fadeIn">
+
+
+        <h2>selected works</h2>
 
         <ul>
-            <li><a href="#">kemptown foodtruck</a> </li>
-            <li><a href="http://iraymusic.com/" target="_blank">iray</a> </li>
-            <li><a href="http://six-ringcircus.com/" target="_blank">six-ring circus</a> </li>
-            <li><a href="#">woco</a> </li>
-            <li><a href="http://institutleonmba.co/" target="_blank">institut léon mba</a> </li>
-        </ul>
-    </main> <!-- End: web -->
+            <li class="accordion">mountains
+                <div class="accordion-content">
+                    <p>Connard !</p>
+                </div>
+            </li>
 
-    <!--**** BOTTOM MENU ****-->
-    <div id="bottom-menu">
-        <ul>
-            <li><a href="mailto:hello@fsimitchiev@gmail.com">hello@fsimitchiev.com</a></li>
-            <li><a href="tel:+33663351022">+33663351022</a></li>
-            <li><a href="#">linkedin</a> </li>
+            <li class="accordion">dawn of collapse
+                <div class="accordion-content">
+                    <p>Connard !</p>
+                </div>
+            </li>
+
+            <li class="accordion">poeme grave <span>w/ claire sciacco</span>
+                <div class="accordion-content">
+                    <p>Connard !</p>
+                </div>
+            </li>
+
+            <li class="accordion">winter on the baltic <span>w/ louis ouvrard</span>
+                <div class="accordion-content">
+                    <p>Connard !</p>
+                </div>
+            </li>
+
+            <li class="accordion">edge of the cliff
+                <div class="accordion-content">
+                    <p>Connard !</p>
+                </div>
+            </li>
         </ul>
-    </div> <!-- End: bottom menu -->
+
+
+    </main> <!-- End: projects -->
+
+    </div> <!-- End: motio wrapper -->
 
 </div> <!-- End: fullpage -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
+<script src="motio/dist/motio.min.js"></script>
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    })
+    //]]>
+</script>
 </body>
 </html>

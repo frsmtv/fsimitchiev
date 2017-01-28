@@ -1,12 +1,17 @@
 $(document).ready(function() {
 
-
-    // **** HOME CONTACT FADEIN ****
-    $('#bottom-menu-home').delay(11000).show('fade', 1000);
+    // **** MOTIO ****
+    // Panning
+    var element = document.querySelector('#panning');
+    var panning = new Motio(element, {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -30 // Negative horizontal speed = panning to left.
+    });
+    panning.play(); // start animation
 
     // ********** TEXT ANIM BUBBLE-Y **********
     var $quotes = $('#quotes .quote'),
-        opts = { fadeTime: 1000, dwellTime: 5000 },
+        opts = { fadeTime: 1000, dwellTime: 4000 },
         shuffle,
         fadeInQuote,
         fadeOutQuote,
@@ -88,21 +93,16 @@ $(document).ready(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $('#logo').addClass('animated fadeOut');
-            $('#bottom-menu').show('fade');
 
         } else {
             $('#logo').removeClass('fadeOut').addClass('fadeIn');
-            $('#bottom-menu').hide('fade');
         }
     });
 
-    // **** TARIFS ****
-    $('#tarifs-btn').click(function(){
-        $('#tarifs').show('fade', 1000);
-        $('html, body').animate({
-            scrollTop: $('#tarifs').offset().top - 20
-        }, 'slow');
-        $('#tarifs-btn').hide('fade', 500)
+    // **** PROJECTS -> ACCORDION CONTENT REVEAL ****
+    $('.accordion').click(function(){
+       $(this).find('.accordion-content').show('blind', 500);
+
     });
 
 });

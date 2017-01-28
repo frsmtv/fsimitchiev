@@ -1,70 +1,82 @@
 nav {
-  text-align: center;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
+  font-size: 24px;
+  //font-family: $navFont;
+  .corner-nav {
+    position: fixed;
+  }
+  .top-left {
+    top: 60px;
+    left: 60px;
+  }
+  .top-right {
+    top: 60px;
+    right: 60px;
+  }
+  .bottom-right {
+    bottom: 60px;
+    right: 60px;
+  }
+  .bottom-left {
+    bottom: 60px;
+    left: 60px;
+  }
+
+  a.active-link {
     color: $hoverColor;
-    list-style: none;
-    padding: 0;
-    li {
-      margin-right: 6%;
-      a.active-link {
-        color: $hoverColor;
-        display: inline-block;
-        position: relative;
-        padding-bottom: 0;
-        opacity: 1;
+    display: inline-block;
+    padding-bottom: 0;
+    opacity: 1;
+    font-style: italic;
 
-        //content: '';
-        //display: block;
-        //margin: auto;
-        //height: 1px;
-        //width: 100%;
-        //background: $hoverColor;
-        &:hover {
-          opacity: 1 !important;
-        }
-      }
-      //a.active-link:after {
-      //  content: '';
-      //  display: block;
-      //  margin: auto;
-      //  height: 1px;
-      //  width: 0px;
-      //  background: transparent;
-      //  transition: width .5s ease, background-color .5s ease;
-      //}
-      //a.active-link:hover:after {
-      //  width: 100%;
-      //  background: transparent;
-      //}
-
-      a.non-active-link {
-        color: $hoverColor;
-        display: inline-block;
-        position: relative;
-        padding-bottom: 0;
-        opacity: .6;
-        &:hover {
-          opacity: 1 !important;
-          color: $hoverColor;
-        }
-      }
-      //a.non-active-link:after {
-      //  content: '';
-      //  display: block;
-      //  margin: auto;
-      //  height: 1px;
-      //  width: 0px;
-      //  background: transparent;
-      //  transition: width .5s ease, background-color .5s ease;
-      //}
-      //a.non-active-link:hover:after {
-      //  width: 100%;
-      //  background: $hoverColor;
-      //}
+    //content: '';
+    //display: block;
+    //margin: auto;
+    //height: 1px;
+    //width: 100%;
+    //background: $hoverColor;
+    &:hover {
+      opacity: 1 !important;
     }
   }
-}
+  //a.active-link:after {
+  //  content: '';
+  //  display: block;
+  //  margin: auto;
+  //  height: 1px;
+  //  width: 0px;
+  //  background: transparent;
+  //  transition: width .5s ease, background-color .5s ease;
+  //}
+  //a.active-link:hover:after {
+  //  width: 100%;
+  //  background: transparent;
+  //}
+
+  a.non-active-link {
+    color: $mainColor;
+    display: inline-block;
+    padding-bottom: 0;
+    opacity: .6;
+    &:hover {
+      opacity: 1 !important;
+      color: $hoverColor;
+      font-style: italic;
+    }
+  }
+  //a.non-active-link:after {
+  //  content: '';
+  //  display: block;
+  //  margin: auto;
+  //  height: 1px;
+  //  width: 0px;
+  //  background: transparent;
+  //  transition: width .5s ease, background-color .5s ease;
+  //}
+  //a.non-active-link:hover:after {
+  //  width: 100%;
+  //  background: $hoverColor;
+  //}
+    }
+
+
 
