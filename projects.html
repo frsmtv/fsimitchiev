@@ -44,7 +44,7 @@ Double bassist, electronic music artist. Composer at the confluences of classica
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body style="overflow: visible;">
+<body id="panning" class="panning" style="overflow: visible;">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -67,9 +67,6 @@ Double bassist, electronic music artist. Composer at the confluences of classica
         </nav> <!-- End: nav -->
 
     </header>
-
-        <!--**** MOTIO WRAPPER ****-->
-    <div id="panning" class="panning">
 
     <!--******************** PROJECTS ********************-->
     <main id="projects" class="animated fadeIn">
@@ -112,8 +109,6 @@ Double bassist, electronic music artist. Composer at the confluences of classica
 
     </main> <!-- End: projects -->
 
-    </div> <!-- End: motio wrapper -->
-
 </div> <!-- End: fullpage -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -130,5 +125,17 @@ Double bassist, electronic music artist. Composer at the confluences of classica
     })
     //]]>
 </script>
+
+<!--**** MOTIO ****-->
+<script>
+    // Panning
+    var element = document.querySelector('#panning');
+    var panning = new Motio(element, {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -30 // Negative horizontal speed = panning to left.
+    });
+    panning.play(); // start animation
+</script>
+
 </body>
 </html>

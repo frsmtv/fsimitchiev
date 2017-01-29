@@ -10,12 +10,11 @@
 #quotes {
   font-size: 45px;
   font-style: italic;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   height: 150px;
 
   .quote {
     line-height: 1.5;
-    font-weight: bolder;
     text-align: center;
 
     span[class*=line] {
@@ -28,7 +27,6 @@
       margin: .5em;
       margin-left: 61%;
       text-align: left;
-      font-style: italic;
     }
   }
 }

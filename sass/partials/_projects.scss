@@ -2,7 +2,8 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   h2 {
     display: inline-block;
     font-size: $projectsFontSize;
@@ -28,6 +29,7 @@
         cursor: pointer;
         opacity: 1;
         color: $hoverColor;
+        font-style: italic;
       }
     }
   }

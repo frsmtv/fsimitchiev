@@ -19,7 +19,6 @@ html, body {
   font-family: $mainFont;
   color: #333333;
   background: url("../fsimitchiev-site-bg.mp4");
-  background-size: cover;
 }
 
 a {
@@ -35,6 +34,7 @@ a {
   &:hover {
     opacity: 1;
     color: $hoverColor;
+    font-style: italic;
   }
 }
 
