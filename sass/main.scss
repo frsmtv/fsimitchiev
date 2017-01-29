@@ -68,28 +68,4 @@ a {
     margin: 10px 0 50px 0;
     color: #F6F6F7!important;
   }
-
-  #contact {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 0;
-    ul {
-      display: flex;
-      margin-bottom: 4%;
-      justify-content: space-around;
-      list-style: none;
-      font-size: 1rem;
-      i {
-        display: inline;
-      }
-      }
-  }
 }

@@ -90,10 +90,9 @@ $(document).ready(function() {
         }
     });
 
-    // **** PROJECTS -> ACCORDION CONTENT REVEAL ****
-    $('.accordion').click(function(){
-       $(this).find('.accordion-content').show('blind', 500);
-
+    // **** PROJECTS -> ACCORDION ****
+    $('.accordion').accordion({
+        "transitionSpeed": 400
     });
 
 });

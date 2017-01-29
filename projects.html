@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,6 +41,7 @@ Double bassist, electronic music artist. Composer at the confluences of classica
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="dist/css/jquery.accordion.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -56,11 +57,11 @@ Double bassist, electronic music artist. Composer at the confluences of classica
 
     <!--******** HEADER ********-->
     <header>
-        <a href="index.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
+        <a href="home.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
 
         <!--********* NAV **********-->
         <nav id="nav" class="animated fadeIn">
-            <span><a class="non-active-link corner-nav top-left" href="index.html">home</a></span>
+            <span><a class="non-active-link corner-nav top-left" href="home.html">home</a></span>
             <span><a class="active-link corner-nav top-right" href="projects.html">projects</a></span>
             <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
             <span><a class="non-active-link corner-nav bottom-left" href="live.html">live</a></span>
@@ -74,37 +75,58 @@ Double bassist, electronic music artist. Composer at the confluences of classica
 
         <h2>selected works</h2>
 
-        <ul>
-            <li class="accordion">mountains
-                <div class="accordion-content">
-                    <p>Connard !</p>
+        <!--**** ACCORDION ****-->
+        <div data-accordion-group>
+            <div class="accordion" data-accordion>
+                <div data-control>mountains</div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267020139&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
                 </div>
-            </li>
+            </div>
 
-            <li class="accordion">dawn of collapse
-                <div class="accordion-content">
-                    <p>Connard !</p>
+            <div class="accordion" data-accordion>
+                <div data-control>ahrk #2 <span>w/ claire sciacco</span></div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/221713954&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
                 </div>
-            </li>
+            </div>
 
-            <li class="accordion">poeme grave <span>w/ claire sciacco</span>
-                <div class="accordion-content">
-                    <p>Connard !</p>
+            <div class="accordion" data-accordion>
+                <div data-control>ahrk #1 <span>w/ claire sciacco</span></div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/211514544&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
                 </div>
-            </li>
+            </div>
 
-            <li class="accordion">winter on the baltic <span>w/ louis ouvrard</span>
-                <div class="accordion-content">
-                    <p>Connard !</p>
+            <div class="accordion" data-accordion>
+                <div data-control>dawn of collapse</div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/231419459&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
                 </div>
-            </li>
+            </div>
 
-            <li class="accordion">edge of the cliff
-                <div class="accordion-content">
-                    <p>Connard !</p>
+            <div class="accordion" data-accordion>
+                <div data-control>poeme grave <span>w/ claire sciacco</span></div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/158395331&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
                 </div>
-            </li>
-        </ul>
+            </div>
+
+            <div class="accordion" data-accordion>
+                <div data-control>winter on the baltic <span>w/ louis ouvrard</span></div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/185923234&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
+                </div>
+            </div>
+
+            <div class="accordion" data-accordion>
+                <div data-control>edge of the cliff</div>
+                <div data-content>
+                    <div><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171016720&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
+                </div>
+            </div>
+
+        </div> <!-- End: data-accordion-group
 
 
     </main> <!-- End: projects -->
@@ -115,6 +137,8 @@ Double bassist, electronic music artist. Composer at the confluences of classica
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
 <script src="motio/dist/motio.min.js"></script>
+<script src="js/jquery.accordion.js"></script>
+
 <!--**** PRELOADER ****-->
 <script type="text/javascript">
     //<![CDATA[
