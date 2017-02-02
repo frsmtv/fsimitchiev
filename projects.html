@@ -42,7 +42,7 @@ Double bassist, composer, sound artist. Composer at the confluences of classical
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="panning" class="panning" style="overflow: visible;">
+<body id="" class="" style="overflow: visible;">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -133,7 +133,6 @@ Double bassist, composer, sound artist. Composer at the confluences of classical
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
-<script src="motio/dist/motio.min.js"></script>
 <script src="js/jquery.accordion.js"></script>
 
 <!--**** PRELOADER ****-->
@@ -145,17 +144,6 @@ Double bassist, composer, sound artist. Composer at the confluences of classical
         $('body').delay(350).css({'overflow':'visible'});
     });
     //]]>
-</script>
-
-<!--**** MOTIO ****-->
-<script>
-    // Panning
-    var element = document.querySelector('#panning');
-    var panning = new Motio(element, {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -30 // Negative horizontal speed = panning to left.
-    });
-    panning.play(); // start animation
 </script>
 
 </body>
