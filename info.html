@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="" class="" style="overflow: visible;">
+<body id="" class="">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -56,44 +56,29 @@
 
         <!--********* NAV **********-->
         <nav id="nav" class="animated fadeIn">
-            <span><a class="non-active-link corner-nav top-left" href="info.html">info</a></span>
+            <span><a class="active-link corner-nav top-left" href="info.html">info</a></span>
             <span><a class="non-active-link corner-nav top-right" href="music.html">music</a></span>
-            <span><a class="active-link corner-nav bottom-right" href="contact.html">contact</a></span>
+            <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
             <span><a class="non-active-link corner-nav bottom-left" href="web.html">web</a></span>
         </nav> <!-- End: nav -->
 
     </header>
 
-    <!--************ CONTACT *************-->
-    <main id="contactPage" class="animated fadeIn">
+    <!--******** MAIN CONTENT ********-->
+    <main class="animated fadeIn">
 
-        <ul>
-            <li><b>phone</b>
-                <a href="tel:0663351022">+33 (6) 63351022</a></li>
-            <li><b>email</b>
-                <a href="mailto:hello@fsimitchiev.com">hello@fsimitchiev.com</a></li>
-            <li><a style="padding-left: 0" href="https://soundcloud.com/fsimitchiev" target="_blank">soundcloud</a> | <a style="padding-left: 0" href="https://twitter.com/fsimitchiev" target="_blank">twitter</a></li>
-        </ul>
+
+
+
 
     </main>
 
-    <!--******** FOOTER ********-->
-    <footer class="animated fadeIn">
-        <p>
-            © 2017 | All audio content on this website is © François Simitchiev. All rights reserved.<br>
-            If you'd like to use one of those pieces for your project, <a href="mailto:hello@fsimitchiev.com">please get in touch</a>.<br>
-            There's of course also the possibility that I compose new pieces individually for your project.<br>
-            <br>
-            <i>Thanks a lot for your interest.</i><br>
-            <br>
-            <span>Designed & coded by François Simitchiev | Logo by Romain Launais.</span>
-        </p>
-    </footer>
+</div> <!-- fullpage -->
 
-</div> <!-- End: fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
+
 <!--**** PRELOADER ****-->
 <script type="text/javascript">
     //<![CDATA[
@@ -101,7 +86,7 @@
         $('#status').fadeOut(); // will first fade out the loading animation
         $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
         $('body').delay(350).css({'overflow':'visible'});
-    })
+    });
     //]]>
 </script>
 
