@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Double bassist, composer, sound artist | Front-end web developer.">
     <meta name="author" content="François SIMITCHIEV">
-    <title>François Simitchiev - musician | web developer</title>
+    <meta name="description" content="
+Double bassist, composer, sound artist. At the confluences of classical, electronic and ambient music.">
+    <meta name="author" content="François SIMITCHIEV">
+    <title>François Simitchiev - double basssit, composer, sound artist</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -40,7 +42,7 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="" class="">
+<body id="panning" class="panning">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -52,14 +54,13 @@
 
     <!--******** HEADER ********-->
     <header>
-        <a href="home.html"><img id="logo" class="animated fadeIn" src="dist/img/francois-simitchiev-logo2.png" alt="francois simitchiev, etc..." title="francois simitchiev logo"></a>
 
         <!--********* NAV **********-->
         <nav id="nav" class="animated fadeIn">
             <span><a class="active-link corner-nav top-left" href="info.html">info</a></span>
             <span><a class="non-active-link corner-nav top-right" href="music.html">music</a></span>
             <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
-            <span><a class="non-active-link corner-nav bottom-left" href="web.html">web</a></span>
+            <span><a class="non-active-link corner-nav bottom-left" href="#">live</a></span>
         </nav> <!-- End: nav -->
 
     </header>
@@ -77,6 +78,7 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="motio/dist/motio.min.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->
@@ -88,6 +90,17 @@
         $('body').delay(350).css({'overflow':'visible'});
     });
     //]]>
+</script>
+
+<!--**** MOTIO ****-->
+<script>
+    // Panning
+    var element = document.querySelector('#panning');
+    var panning = new Motio(element, {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -30 // Negative horizontal speed = panning to left.
+    });
+    panning.play(); // start animation
 </script>
 
 </body>
