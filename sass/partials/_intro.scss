@@ -1,16 +1,17 @@
 #intro {
   text-align: center;
-  #intro-gif {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  a {
-    display: inline-block;
-    font-size: 1rem;
-    padding: 1%;
+  h1 {
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -ms-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
+    span {
+      font-size: 65%;
+    }
+    &:hover {
+      color: $hoverColor;
+      cursor: pointer;
+    }
   }
 }

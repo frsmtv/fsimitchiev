@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="
-Double bassist, composer, sound artist. At the confluences of classical, electronic and ambient music.">
-    <meta name="author" content="François SIMITCHIEV">
-    <title>François Simitchiev - double basssit, composer, sound artist</title>
+    <meta name="description" content="Contrebassiste, sound artist aux confluences de la musique classique, électronique, et de l'ambient.">
+    <meta name="author" content="DAKHEUR KLUB">
+    <title>François Simitchiev - contrebassiste, sound artist</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -37,28 +36,92 @@ Double bassist, composer, sound artist. At the confluences of classical, electro
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
 <body id="panning" class="panning">
 
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
 <!--******** MAIN CONTAINER ********-->
-<div id="intro">
+<div id="fullpage">
 
-    <!--<img id="intro-gif" class="animated fadeIn" src="PreLoadMe/img/preloader.gif" alt="francois simitchiev" title="francois simitchiev">-->
+    <!--******** HEADER ********-->
+    <header>
 
-    <h1 class="animated fadeIn">françois simitchiev</h1>
+        <!--********* NAV **********-->
+        <nav id="nav" class="animated fadeIn">
+                <span><a class="non-active-link corner-nav top-left" href="index.html">home</a></span>
+                <span><a class="non-active-link corner-nav bottom-left" href="info.html">info</a></span>
+                <span><a class="non-active-link corner-nav top-right" href="music.html">projets</a></span>
+                <span><a class="non-active-link corner-nav bottom-right" href="contact.html">contact</a></span>
+        </nav> <!-- End: nav -->
 
-    <a class="animated fadeIn" href="home.html">en</a> |
-    <a class="animated fadeIn" href="">fr</a>
+    </header>
+
+    <!--******** INTRO BUBBLE_Y ********-->
+    <main id="intro" class="animated fadeIn">
+
+        <div id="intro">
+
+            <h1 class="animated fadeIn">françois simitchiev<br>
+            <span>contrebassiste / sound artist</span></h1>
 
 
-</div> <!-- End: intro -->
+        </div> <!-- End: intro -->
 
+
+            <!--<div id="quotes">-->
+                <!--<div class="quote">-->
+                    <!--<p class="text">Hi!<br>-->
+                        <!--I'm a double bass player, composer & sound artist<br>-->
+                        <!--based in Lyon, France.-->
+                    <!--</p>-->
+                <!--</div>-->
+
+                <!--<div class="quote">-->
+                    <!--<p class="text">-->
+                        <!--I am also a front-end web developer!-->
+                    <!--</p>-->
+                <!--</div>-->
+
+                <!--<div class="quote">-->
+                    <!--<p class="text">-->
+                        <!--Have a look at my works, and feel free to get in touch if you if you want us to work together-->
+                    <!--</p>-->
+                <!--</div>-->
+
+                <!--<div class="quote">-->
+                    <!--<p class="text">-->
+                    <!--</p>-->
+                <!--</div>-->
+
+            <!--</div> &lt;!&ndash; End: quotes &ndash;&gt;-->
+
+
+    </main> <!-- End: intro -->
+
+</div> <!-- fullpage -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
 <script src="motio/dist/motio.min.js"></script>
 <script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
 
 <!--**** MOTIO ****-->
 <script>
