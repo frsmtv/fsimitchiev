@@ -25,7 +25,6 @@ nav {
     display: inline-block;
     padding-bottom: 0;
     opacity: 1;
-    font-style: italic;
 
     //content: '';
     //display: block;
@@ -59,7 +58,6 @@ nav {
     &:hover {
       opacity: 1 !important;
       color: $hoverColor;
-      font-style: italic;
     }
   }
   //a.non-active-link:after {
